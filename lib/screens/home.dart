@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
 
   Future<dynamic> fetchingData()async{
     var _db = FirebaseFirestore.instance; 
-    QuerySnapshot snapshot1 = await _db.collection("user_clothes").doc(FirebaseAuth.instance.currentUser!.uid).collection("T-shirt").get();
+    QuerySnapshot snapshot1 = await _db.collection("user_clothes").doc(FirebaseAuth.instance.currentUser!.uid).collection("T-Shirt").get();
     QuerySnapshot snapshot2 = await _db.collection("user_clothes").doc(FirebaseAuth.instance.currentUser!.uid).collection("Jacket").get();
     QuerySnapshot snapshot3 = await _db.collection("user_clothes").doc(FirebaseAuth.instance.currentUser!.uid).collection("Shoes").get();
     QuerySnapshot snapshot4 = await _db.collection("user_clothes").doc(FirebaseAuth.instance.currentUser!.uid).collection("Jeans").get();
